@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapiPapel CDMX | Papelería Urgente a Domicilio</title>
+    <meta name="description" content="Envíos express de artículos de papelería, impresión y suministros de oficina en la Ciudad de México. ¡Recibe tus pedidos en minutos!">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
+                    <i data-lucide="file-text" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-gray-900">RapiPapel</span>
+                    <span class="text-xs font-bold text-blue-600 block -mt-1 tracking-widest uppercase">CDMX</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600 text-sm">
+                <a href="#servicios" class="hover:text-blue-600 transition-colors">Servicios</a>
+                <a href="#cobertura" class="hover:text-blue-600 transition-colors">Cobertura</a>
+                <a href="#testimonios" class="hover:text-blue-600 transition-colors">Opiniones</a>
+                <a href="#contacto" class="hover:text-blue-600 transition-colors">Contacto</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="https://wa.me/525500000000?text=Hola,%20necesito%20un%20pedido%20urgente%20de%20papeler%C3%ADa" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 text-sm">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pedir por WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white py-20 lg:py-28 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <span class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white">
+                            <i data-lucide="zap" class="w-4 h-4 text-yellow-300 fill-yellow-300"></i> Entrega Express en CDMX
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                            Tus impresiones y papelería <span class="text-yellow-300">en la puerta de tu casa u oficina</span>
+                        </h1>
+                        <p class="text-lg text-blue-100 max-w-xl mx-auto lg:mx-0">
+                            ¿Se te acabó la tinta o necesitas planos/documentos impresos para ya? Nosotros nos encargamos. Envíos súper rápidos en las principales alcaldías de la CDMX.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                            <a href="https://wa.me/525500000000" target="_blank" class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Hacé tu Pedido Ahora
+                            </a>
+                            <a href="#servicios" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-8 py-4 rounded-xl backdrop-blur-sm transition-all text-center">
+                                Ver Servicios
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div class="bg-white p-8 rounded-3xl shadow-2xl text-gray-800 max-w-md mx-auto transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xl">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Envío Exprés</h3>
+                                    <p class="text-sm text-gray-500">Tiempo promedio: 30-45 min</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 text-sm font-medium">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                                    <span>Impresiones digitalizadas y en alta calidad</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                                    <span>Artículos de oficina y útiles escolares</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                                    <span>Engargolados, enmicados y copias</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                                    <span>Pago a la entrega o transferencia</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Servicios Rápidos para Ti</h2>
+                    <p class="text-gray-600 text-lg">Resolvemos tus necesidades de papelería sin que tengas que salir de casa u oficina.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="printer" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Impresiones y Copias</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Envíanos tus PDFs o documentos por WhatsApp o correo. Imprimimos a color o blanco y negro, con excelente calidad.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="package" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Suministros de Oficina</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Hojas blancas, plumas, carpetas, tóners, post-its y todo el material indispensable para que tu jornada no se detenga.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="book-open" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Acabados y Tareas</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Engargolados, enmicados, escaneo de documentos y armado de listas escolares completas listos para entrega directa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coverage Section -->
+        <section id="cobertura" class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Zona de Cobertura en CDMX</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-10">Llegamos a las principales alcaldías con servicio de mensajería propio y aliados locales.</p>
+                
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white border border-gray-200 px-5 py-2.5 rounded-full font-medium text-gray-700 shadow-sm">Cuauhtémoc</span>
+                    <span class="bg-white border border-gray-200 px-5 py-2.5 rounded-full font-medium text-gray-700 shadow-sm">Benito Juárez</span>
+                    <span class="bg-white border border-gray-200 px-5 py-2.5 rounded-full font-medium text-gray-700 shadow-sm">Miguel Hidalgo</span>
+                    <span class="bg-white border border-gray-200 px-5 py-2.5 rounded-full font-medium text-gray-700 shadow-sm">Coyoacán</span>
+                    <span class="bg-white border border-gray-200 px-5 py-2.5 rounded-full font-medium text-gray-700 shadow-sm">Álvaro Obregón</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / How it works -->
+        <section id="contacto" class="py-20 bg-blue-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-6">¿Cómo hacer tu pedido?</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto my-12">
+                    <div class="space-y-2">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center font-bold text-xl mx-auto">1</div>
+                        <h4 class="font-bold text-lg">Envíanos un WhatsApp</h4>
+                        <p class="text-sm text-blue-200">Indícanos qué productos o archivos necesitas imprimir.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center font-bold text-xl mx-auto">2</div>
+                        <h4 class="font-bold text-lg">Cotización Inmediata</h4>
+                        <p class="text-sm text-blue-200">Te confirmamos costo total y tiempo exacto de entrega.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center font-bold text-xl mx-auto">3</div>
+                        <h4 class="font-bold text-lg">Recibe en tu Puerta</h4>
+                        <p class="text-sm text-blue-200">Paga al recibir en efectivo o mediante transferencia bancaria.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/525500000000" target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    <span>Iniciar Pedido por WhatsApp</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="file-text" class="w-5 h-5 text-blue-500"></i>
+                <span class="text-white font-bold">RapiPapel CDMX</span>
+            </div>
+            <p class="text-sm">&copy; 2026 RapiPapel CDMX. Todos los derechos reservados.</p>
+            <div class="flex gap-4 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Términos del Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
